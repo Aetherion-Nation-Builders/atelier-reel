@@ -1,28 +1,28 @@
-//! Community and project links (Help menu, About dialog, header Discord button, Home screen).
+//! Nation and project links (Help menu, About dialog, header button, Home screen).
 //!
-//! FilmCraft is part of the ArtCraft family: the community lives on the ArtCraft Discord, every
-//! app has a page on the ArtCraft website and a public GitHub repository.
+//! Atelier Reel is part of Atelier, the Nation's creative suite. The command ids keep their
+//! upstream names (`help.discord`, `help.website`) so menus and shortcuts stay untouched.
 
 /// The app's short name, used in the website and repository URLs.
-pub const APP: &str = "filmcraft";
+pub const APP: &str = "reel";
 
-/// The ArtCraft community Discord.
-pub const DISCORD: &str = "https://discord.gg/artcraft";
-/// The ArtCraft website.
-pub const WEBSITE: &str = "https://getartcraft.com";
-/// FilmCraft's page on the ArtCraft website.
-pub const APP_PAGE: &str = "https://getartcraft.com/apps/filmcraft";
-/// FilmCraft's source repository.
-pub const GITHUB: &str = "https://github.com/storytold/filmcraft";
-/// New issue on FilmCraft's repository.
-pub const ISSUES: &str = "https://github.com/storytold/filmcraft/issues";
+/// The Nation (the `help.discord` command: where people gather).
+pub const DISCORD: &str = "https://www.aetherionnnation.com";
+/// The Atelier suite.
+pub const WEBSITE: &str = "https://www.aetherionnnation.com/atelier";
+/// This app's page.
+pub const APP_PAGE: &str = "https://www.aetherionnnation.com/atelier/reel";
+/// This app's source repository.
+pub const GITHUB: &str = "https://github.com/Aetherion-Nation-Builders/atelier-reel";
+/// New issue on this app's repository.
+pub const ISSUES: &str = "https://github.com/Aetherion-Nation-Builders/atelier-reel/issues";
 
 /// (command id, label, url) for every link, in menu order.
 pub const ALL: [(&str, &str, &str); 5] = [
-    ("help.discord", "Join the ArtCraft Discord…", DISCORD),
-    ("help.website", "ArtCraft Website", WEBSITE),
-    ("help.appPage", "FilmCraft on getartcraft.com", APP_PAGE),
-    ("help.github", "FilmCraft on GitHub", GITHUB),
+    ("help.discord", "Join the Nation…", DISCORD),
+    ("help.website", "Atelier Suite", WEBSITE),
+    ("help.appPage", "Atelier Reel Website", APP_PAGE),
+    ("help.github", "Atelier Reel on GitHub", GITHUB),
     ("help.reportIssue", "Report an Issue…", ISSUES),
 ];
 
@@ -41,9 +41,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn urls_follow_the_artcraft_scheme() {
-        assert_eq!(APP_PAGE, format!("{WEBSITE}/apps/{APP}"));
-        assert_eq!(GITHUB, format!("https://github.com/storytold/{APP}"));
+    fn urls_follow_the_atelier_scheme() {
+        assert_eq!(APP_PAGE, format!("{WEBSITE}/{APP}"));
+        assert_eq!(GITHUB, format!("https://github.com/Aetherion-Nation-Builders/atelier-{APP}"));
         assert!(ALL.iter().all(|(id, _, u)| id.starts_with("help.") && u.starts_with("https://")));
         assert_eq!(url_for("help.discord"), Some(DISCORD));
         assert_eq!(url_for("help.nope"), None);

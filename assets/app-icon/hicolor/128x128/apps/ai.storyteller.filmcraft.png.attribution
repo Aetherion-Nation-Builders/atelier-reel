@@ -1,8 +1,8 @@
 asset:        ai.storyteller.filmcraft.png
-title:        FilmCraft app icon, Linux hicolor theme 128 px
-author:       Brandon Thomas (FilmCraft owner), for the FilmCraft project
-source:       original work (drawn by the owner in ArtCraft, then vectorised)
+title:        Atelier Reel app icon, Linux hicolor theme 128 px
+author:       Aetherion Nation, for Atelier
+source:       original work (drawn for Atelier Reel by hand as SVG)
 license:      MIT OR Apache-2.0
 license-file: assets/app-icon/LICENSE.txt
-added:        2026-10-02 by Claude (agent) for Brandon Thomas
-notes:        Rendered from filmcraft.svg with resvg by packaging/icons.sh.
+added:        2026-10-11 by Claude (agent) for King OG
+notes:        Three colours: volcanic black #141210, ivory #efe6d2, ochre #d9a441; 512 viewBox, rx=112. Rendered with cairosvg and Pillow. Replaces the FilmCraft owl icon. See assets/app-icon/README.md.

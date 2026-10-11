@@ -5,10 +5,10 @@
   <id>ai.storyteller.filmcraft</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT OR Apache-2.0</project_license>
-  <name>FilmCraft</name>
+  <name>Atelier Reel</name>
   <summary>Edit video, color and sound</summary>
   <developer id="ai.storyteller">
-    <name>Learning Machines LLC</name>
+    <name>Aetherion Nation</name>
   </developer>
   <description>
     <p>
@@ -18,10 +18,10 @@
   <launchable type="desktop-id">ai.storyteller.filmcraft.desktop</launchable>
   <icon type="stock">ai.storyteller.filmcraft</icon>
   <!-- Only url types known to appstream 0.15 (Ubuntu 22.04, where CI validates): no vcs-browser. -->
-  <url type="homepage">https://getartcraft.com/apps/filmcraft</url>
-  <url type="bugtracker">https://github.com/storytold/filmcraft/issues</url>
-  <url type="help">https://github.com/storytold/filmcraft</url>
-  <url type="contact">https://discord.gg/artcraft</url>
+  <url type="homepage">https://www.aetherionnnation.com/atelier/reel</url>
+  <url type="bugtracker">https://github.com/Aetherion-Nation-Builders/atelier-reel/issues</url>
+  <url type="help">https://github.com/Aetherion-Nation-Builders/atelier-reel</url>
+  <url type="contact">https://www.aetherionnnation.com</url>
   <categories>
     <category>AudioVideo</category>
     <category>Video</category>

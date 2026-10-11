@@ -1,8 +1,8 @@
-//! The ArtCraft wordmark (first-party trademark, used with permission; see `docs/brand/` and
-//! AGENTS.md §1.8), decoded once and kept as a texture.
+//! The Atelier wordmark (`assets/brand/`, original work, see its `.attribution` files), decoded
+//! once and kept as a texture. It replaces the ArtCraft wordmark upstream shows here.
 
-const LOGO_LIGHT_INK: &[u8] = include_bytes!("../../../docs/brand/artcraft-logo-white.png");
-const LOGO_DARK_INK: &[u8] = include_bytes!("../../../docs/brand/artcraft-logo.png");
+const LOGO_LIGHT_INK: &[u8] = include_bytes!("../../../assets/brand/atelier-wordmark-white.png");
+const LOGO_DARK_INK: &[u8] = include_bytes!("../../../assets/brand/atelier-wordmark.png");
 
 /// The wordmark for a dark (`dark = true`) or light UI: light ink on dark themes. Its aspect
 /// ratio is width / height of the returned texture.

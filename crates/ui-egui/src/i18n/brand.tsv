@@ -1,0 +1,65 @@
+# Atelier brand strings: the UI strings that are ours, not FilmCraft's, with their translations.
+# Format: language code <TAB> English source <TAB> translation. The `product` line is the rename
+# applied to every upstream catalog entry as it loads (see identity.rs and docs/brand.md).
+# Languages without a line for a string show the English.
+product	FilmCraft	Atelier Reel
+
+en	Join the Nation…	Join the Nation…
+en	Join the Nation	Join the Nation
+en	Join the Nation (aetherionnnation.com)	Join the Nation (aetherionnnation.com)
+en	Nation	Nation
+en	Atelier Suite	Atelier Suite
+en	Atelier suite	Atelier suite
+en	Atelier Reel Website	Atelier Reel Website
+en	Atelier Reel website	Atelier Reel website
+en	The Nation's video editor. Part of Atelier, built on FilmCraft by the ArtCraft team.	The Nation's video editor. Part of Atelier, built on FilmCraft by the ArtCraft team.
+
+es	Join the Nation…	Únete a la Nación…
+es	Join the Nation	Únete a la Nación
+es	Join the Nation (aetherionnnation.com)	Únete a la Nación (aetherionnnation.com)
+es	Nation	Nación
+es	Atelier Suite	Suite Atelier
+es	Atelier suite	Suite Atelier
+es	Atelier Reel Website	Sitio web de Atelier Reel
+es	Atelier Reel website	Sitio web de Atelier Reel
+es	The Nation's video editor. Part of Atelier, built on FilmCraft by the ArtCraft team.	El editor de vídeo de la Nación. Parte de Atelier, construido sobre FilmCraft del equipo de ArtCraft.
+
+pt-br	Join the Nation…	Junte-se à Nação…
+pt-br	Join the Nation	Junte-se à Nação
+pt-br	Join the Nation (aetherionnnation.com)	Junte-se à Nação (aetherionnnation.com)
+pt-br	Nation	Nação
+pt-br	Atelier Suite	Suíte Atelier
+pt-br	Atelier suite	Suíte Atelier
+pt-br	Atelier Reel Website	Site do Atelier Reel
+pt-br	Atelier Reel website	Site do Atelier Reel
+pt-br	The Nation's video editor. Part of Atelier, built on FilmCraft by the ArtCraft team.	O editor de vídeo da Nação. Parte do Atelier, construído sobre o FilmCraft da equipe ArtCraft.
+
+uk	Join the Nation…	Приєднатися до Нації…
+uk	Join the Nation	Приєднатися до Нації
+uk	Join the Nation (aetherionnnation.com)	Приєднатися до Нації (aetherionnnation.com)
+uk	Nation	Нація
+uk	Atelier Suite	Пакет Atelier
+uk	Atelier suite	Пакет Atelier
+uk	Atelier Reel Website	Сайт Atelier Reel
+uk	Atelier Reel website	Сайт Atelier Reel
+uk	The Nation's video editor. Part of Atelier, built on FilmCraft by the ArtCraft team.	Відеоредактор Нації. Частина Atelier, побудований на FilmCraft від команди ArtCraft.
+
+ja	Join the Nation…	Nation に参加…
+ja	Join the Nation	Nation に参加
+ja	Join the Nation (aetherionnnation.com)	Nation に参加 (aetherionnnation.com)
+ja	Nation	Nation
+ja	Atelier Suite	Atelier スイート
+ja	Atelier suite	Atelier スイート
+ja	Atelier Reel Website	Atelier Reel の Web サイト
+ja	Atelier Reel website	Atelier Reel の Web サイト
+ja	The Nation's video editor. Part of Atelier, built on FilmCraft by the ArtCraft team.	Nation のビデオエディター。Atelier の一部で、ArtCraft チームの FilmCraft を基に構築。
+
+zh-cn	Join the Nation…	加入 Nation…
+zh-cn	Join the Nation	加入 Nation
+zh-cn	Join the Nation (aetherionnnation.com)	加入 Nation (aetherionnnation.com)
+zh-cn	Nation	Nation
+zh-cn	Atelier Suite	Atelier 套件
+zh-cn	Atelier suite	Atelier 套件
+zh-cn	Atelier Reel Website	Atelier Reel 网站
+zh-cn	Atelier Reel website	Atelier Reel 网站
+zh-cn	The Nation's video editor. Part of Atelier, built on FilmCraft by the ArtCraft team.	Nation 的视频编辑器。Atelier 的一部分，基于 ArtCraft 团队的 FilmCraft 构建。

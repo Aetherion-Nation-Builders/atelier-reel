@@ -1,0 +1,8 @@
+asset:        atelier-wordmark.png
+title:        Atelier wordmark (the hidden sun + "ATELIER"), dark ink, for light backgrounds
+author:       Aetherion Nation
+source:       original work (made for Atelier: the sun disc and ochre bar drawn as shapes, the word set in Cinzel)
+license:      MIT OR Apache-2.0 for the artwork; the Atelier name and mark are not covered by that licence. The glyphs are rendered from Cinzel (Natanael Gama, SIL Open Font License 1.1); no font file is in this repository.
+license-file: LICENSE-MIT
+added:        2026-10-11 by Claude (agent) for King OG
+notes:        1700x360 PNG, transparent. Bundled in the app (About dialog, Home screen), replacing the ArtCraft wordmark.

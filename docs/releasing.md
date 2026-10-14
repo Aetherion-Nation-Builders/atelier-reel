@@ -1,5 +1,14 @@
 # Releasing FilmCraft
 
+> **Atelier Reel, for now:** a release builds the **macOS DMG only**, on GitHub's standard
+> macOS runner, **unsigned** (ad-hoc signed, not notarized) until the Apple signing secrets below
+> are added. The other platforms build again when listed in the repository variable
+> `ATELIER_RELEASE_PLATFORMS` (for example `windows linux freebsd web`). The draft is named
+> `Atelier Reel v<version>`; publish it to make it the release Atelier Gate installs. To cut one
+> without the `release` branch: **Actions › Release › Run workflow** on `main`. An unsigned app
+> downloaded in a browser opens the first time through **System Settings › Privacy & Security ›
+> Open Anyway** (macOS 15). The rest of this page is upstream's guide.
+
 Every push to the `release` branch runs `.github/workflows/release.yml`. The workflow builds
 installers for macOS, Windows, Linux (AppImage, deb, rpm, tarball, Flatpak) and FreeBSD, plus
 the web build, and creates or updates a **draft**
@@ -67,7 +76,7 @@ deliberately, in every job at once.
 ### macOS
 
 `packaging/macos/package.sh` builds `aarch64-apple-darwin` and `x86_64-apple-darwin` with
-`MACOSX_DEPLOYMENT_TARGET=11.0`, joins them with `lipo` and assembles `FilmCraft.app`:
+`MACOSX_DEPLOYMENT_TARGET=11.0`, joins them with `lipo` and assembles `Atelier Reel.app` (its executable and icon file inside keep the machine name `FilmCraft`):
 
 - `Info.plist` is generated from `Info.plist.in` (bundle id `ai.storyteller.filmcraft`, the
   version and the build commit).
@@ -78,7 +87,7 @@ deliberately, in every job at once.
   and checked with `stapler validate`. The app goes on a DMG (`hdiutil makehybrid`), which is
   signed and notarized too. The universal `filmcraft-cli` is signed the same way, zipped, and the zip is notarized.
   Its Finder window (background, icon size and positions) comes from
-  [`packaging/macos/dmg/`](../packaging/macos/dmg/README.md), and its volume is named `FilmCraft`
+  [`packaging/macos/dmg/`](../packaging/macos/dmg/README.md), and its volume is named `Atelier Reel`
   without the version, which the window's background needs; the DMG file name keeps the version.
 
 Locally, without certificates, the script signs ad hoc and skips notarization, which is enough to

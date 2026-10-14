@@ -1,8 +1,8 @@
 asset:        background.svg
-title:        FilmCraft macOS DMG window background
-author:       @XusBadia
+title:        Atelier Reel macOS DMG window background
+author:       Atelier Reel contributors (Aetherion Nation); layout after @XusBadia's original
 source:       original work
 license:      MIT OR Apache-2.0
 license-file: LICENSE-MIT, LICENSE-APACHE
-added:        2026-10-08 by @XusBadia
-notes:        Original work for this repository, derived from the FilmCraft app icon (assets/app-icon/filmcraft.svg, referenced via <image>, not copied). Text is outlined Inter / JetBrains Mono glyph paths. Used for the Finder window of the macOS DMG; packaging/macos/dmg/generate.py renders it to background.tiff. See packaging/macos/dmg/README.md.
+added:        2026-10-08 by @XusBadia; redrawn for Atelier 2026-10-13
+notes:        Original work for this repository, in Atelier's colours, derived from the Atelier Reel app icon (assets/app-icon/filmcraft.svg, referenced via <image>, not copied). Written by packaging/macos/dmg/atelier-background.py; text is outlined Archivo / Geist Mono glyph paths (OFL-1.1). Used for the Finder window of the macOS DMG; packaging/macos/dmg/generate.py renders it to background.tiff. See packaging/macos/dmg/README.md.

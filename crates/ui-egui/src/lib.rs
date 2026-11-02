@@ -6,12 +6,16 @@
 
 #![cfg_attr(not(test), deny(clippy::unwrap_used, clippy::expect_used, clippy::panic, clippy::unimplemented, clippy::todo, clippy::unreachable))]
 
-/// FilmCraft as craft-update knows it, with its 128 px icon and accent colour: the update
-/// prompt shows both, and an AppImage's menu entry gets the icon.
+/// Atelier Reel as craft-update knows it: our name, our releases (never upstream FilmCraft's,
+/// which would replace this app with FilmCraft), our icon and accent. The id stays `filmcraft`
+/// (asset stems, bundle id), like every other machine name (`docs/brand.md`).
 #[cfg(not(target_arch = "wasm32"))]
 pub const UPDATE_APP: craft_update::app::App = craft_update::app::App {
+    name: identity::PRODUCT,
+    repo: "Aetherion-Nation-Builders/atelier-reel",
+    developer: identity::VENDOR,
     icon_png: Some(include_bytes!("../../../assets/app-icon/hicolor/128x128/apps/ai.storyteller.filmcraft.png")),
-    accent: Some([0x8b, 0x5c, 0xf6]),
+    accent: Some([0xd9, 0xa4, 0x41]),
     ..craft_update::suite::FILMCRAFT
 };
 

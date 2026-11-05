@@ -24,6 +24,7 @@ file names in packaging, the `.fcproj` and `.fcgt` formats, environment variable
 | Our own strings, with translations | `crates/ui-egui/src/i18n/brand.tsv` (added to each catalog as it loads; the upstream `.tsv` catalogs stay untouched) |
 | English UI strings | literal `"Atelier Reel"` in `crates/ui-egui/src` and `apps/` |
 | Links | `crates/ui-egui/src/links.rs` (menu ids keep their upstream names, the URLs are ours) |
+| Update checks | `crates/ui-egui/src/lib.rs` (`UPDATE_APP`: our name, releases from Aetherion-Nation-Builders/atelier-reel, never upstream's) |
 | Wordmark | `crates/ui-egui/src/brand.rs` draws `assets/brand/atelier-wordmark*.png` |
 | Data folder | `crates/engine/src/autosave.rs` (`default_data_dir`) |
 | Windows file properties | `apps/filmcraft/build.rs` |

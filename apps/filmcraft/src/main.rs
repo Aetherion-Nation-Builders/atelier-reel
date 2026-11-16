@@ -155,7 +155,7 @@ fn main() -> eframe::Result {
         log::error!("{msg}");
         filmcraft_ui_egui::crash::record(&msg);
         graphics.abandon();
-        let _ = rfd::MessageDialog::new().set_title("FilmCraft").set_description(&msg).set_level(rfd::MessageLevel::Error).show();
+        let _ = rfd::MessageDialog::new().set_title("Atelier Reel").set_description(&msg).set_level(rfd::MessageLevel::Error).show();
         std::process::exit(1);
     }
     // The GPU export renderer creates its own wgpu instance with every backend; after a start

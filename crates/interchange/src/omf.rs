@@ -16,7 +16,7 @@
 //! ([`crate::essence::NestNeeds::Render`]), is media like any other, in a clip named after the
 //! sequence. Premiere Pro's OMF export does the same.
 
-pub(crate) mod bento;
+pub(crate) use craft_aaf::omf::bento;
 mod read;
 mod write;
 
@@ -48,6 +48,9 @@ pub fn export(project: &Project, sequence: ItemId, opts: &OmfOptions) -> Result<
     let doc = comp::from_project(project, sequence, &name, &media, comp::Nests::Rendered, &mut report)?;
     if !doc.compositions[0].markers.is_empty() {
         report.info("sequence markers are not written to OMF");
+    }
+    if project.sequence(sequence).is_some_and(|q| q.video_tracks.iter().any(|t| !t.items.is_empty())) {
+        report.info("video tracks are not written to OMF (audio only)");
     }
     let bytes = write::write(&doc, &mut report)?;
     Ok((bytes, report))
